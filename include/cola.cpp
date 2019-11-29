@@ -41,14 +41,14 @@ const T & cola<T>::front() const{
 template <class T>
 void cola<T>::push(const T & elem){
 	stack<T> aux;
-	for  (unsigned i=0; i < datos.size(); ++i) {
+	while (!datos.empty()) {
 		aux.push(datos.top());
 		datos.pop();
 	}
 
 	aux.push(elem);
 
-	for (unsigned i=0; i < aux.size(); ++i) {
+	while (!aux.empty()) {
 		datos.push(aux.top());
 		aux.pop();
 	}
