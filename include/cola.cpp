@@ -7,17 +7,15 @@
 
 template <class T>
 cola<T>::cola(){
-	datos();
 }
-
+/*
 template <class T>
 cola<T>::cola(const cola<T> & c){
 	datos(c.datos);
 }
-
+*/
 template <class T>
 cola<T>::~cola<T>(){
-	datos.~stack<T>;
 }
 
 template <class T>
@@ -44,14 +42,14 @@ template <class T>
 void cola<T>::push(const T & elem){
 	stack<T> aux;
 	for  (unsigned i=0; i < datos.size(); ++i) {
-		aux.push(datos.front());
+		aux.push(datos.top());
 		datos.pop();
 	}
 
 	aux.push(elem);
 
 	for (unsigned i=0; i < aux.size(); ++i) {
-		datos.push(aux.front());
+		datos.push(aux.top());
 		aux.pop();
 	}
 }

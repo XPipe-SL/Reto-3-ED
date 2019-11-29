@@ -42,7 +42,7 @@ class cola{
 		 * @brief Constructor de copia.
 		 * @param c cola a copiar.
 		 */
-		cola<T>(const cola<T> & c);
+		cola<T>(const cola<T> & c) : datos(c.datos) {};
 
 		/**
 		 * @brief Destructor.
