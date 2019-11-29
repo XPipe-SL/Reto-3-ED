@@ -92,6 +92,13 @@ class cola{
 		 */
 		void swap(cola<T> & c);
 
+		/**
+		 * @brief Sobrecarga del operador de asignación.
+		 * @param orig Parámetro de asignación.
+		 * @return this para concatenación de asignaciones.
+		 */
+		cola<T> & operator=(const cola<T> & orig);
+
 };
 
 #include "cola.cpp"

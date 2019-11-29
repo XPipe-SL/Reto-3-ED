@@ -8,12 +8,7 @@
 template <class T>
 cola<T>::cola(){
 }
-/*
-template <class T>
-cola<T>::cola(const cola<T> & c){
-	datos(c.datos);
-}
-*/
+
 template <class T>
 cola<T>::~cola<T>(){
 }
@@ -62,4 +57,9 @@ size_t cola<T>::size() const{
 template <class T>
 void cola<T>::swap(cola<T> & c){
 	datos.swap(c.datos);
+}
+
+template <class T>
+cola<T> & cola<T>::operator=(const cola<T> & orig){
+	datos = orig.datos;
 }
