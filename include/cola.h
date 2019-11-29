@@ -42,7 +42,7 @@ class cola{
 		 * @brief Constructor de copia.
 		 * @param c cola a copiar.
 		 */
-		cola<T>(cont cola<T> & c);
+		cola<T>(const cola<T> & c);
 
 		/**
 		 * @brief Destructor.
@@ -89,7 +89,7 @@ class cola{
 		/**
 		 * @brief Devuelve el tamaño de la cola.
 		 */
-		size_type size() const;
+		size_t size() const;
 
 		/**
 		 * @brief Intercambia los contenidos de las dos colas.
@@ -97,7 +97,7 @@ class cola{
 		 */
 		void swap(cola<T> & c);
 
-}
+};
 
 #include "cola.cpp"
 

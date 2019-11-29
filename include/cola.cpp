@@ -11,7 +11,7 @@ cola<T>::cola(){
 }
 
 template <class T>
-cola<T>::cola(cont cola<T> & c){
+cola<T>::cola(const cola<T> & c){
 	datos(c.datos);
 }
 
@@ -51,7 +51,7 @@ void cola<T>::pop(){
 }
 
 template <class T>
-size_type cola<T>::size() const{
+size_t cola<T>::size() const{
 	return datos.size();
 }
 

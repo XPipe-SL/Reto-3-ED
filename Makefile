@@ -19,8 +19,8 @@ $(BIN)/main: $(OBJ)/main.o $(OBJ)/cola.o
 $(OBJ)/main.o: $(SRC)/main.cpp $(INC)/cola.h
 	$(CXX) $(CPPFLAGS)  $(SRC)/main.cpp -o  $(OBJ)/main.o
 
-$(OBJ)/cola.o: $(SRC)/cola.cpp $(INC)/cola.h 
-	$(CXX) $(CPPFLAGS)  $(SRC)/cola.cpp -o  $(OBJ)/cola.o 	
+$(OBJ)/cola.o: $(INC)/cola.cpp $(INC)/cola.h 
+	$(CXX) $(CPPFLAGS)  $(INC)/cola.cpp -o  $(OBJ)/cola.o 	
 	
 
 # ************ Limpieza ************
