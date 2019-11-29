@@ -56,11 +56,6 @@ class cola{
 		bool empty() const;
 
 		/**
-		 * @brief Deja la cola vacía.
-		 */
-		void clear();
-
-		/**
 		 * @brief Acceso al primer elemento.
 		 * @pre La cola no puede estar vacía.
 		 * @return Referencia a este elemento.

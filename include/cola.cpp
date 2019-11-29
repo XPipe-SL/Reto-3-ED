@@ -24,11 +24,6 @@ bool cola<T>::empty() const{
 }
 
 template <class T>
-void cola<T>::clear(){
-	datos.clear();
-}
-
-template <class T>
 T & cola<T>::front(){
 	return datos.top();
 }
