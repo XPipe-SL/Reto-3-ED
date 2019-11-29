@@ -1,3 +1,9 @@
+/**
+ * @file main.cpp
+ * @brief Fichero main.
+ * @author Miguel Piñar, Alejandro Villannueva
+ */
+
 #include <iostream>
 #include "cola.h"
 

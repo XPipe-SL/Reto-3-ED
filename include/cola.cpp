@@ -1,7 +1,7 @@
 /**
  * @file cola.cpp
  * @brief Fichero de implementación del T.D.A. cola.
- * @author Miguel Piñar
+ * @author Miguel Piñar, Alejandro Villannueva
  */
 
 

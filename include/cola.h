@@ -1,7 +1,7 @@
 /**
  * @file cola.h
  * @brief Fichero del T.D.A. cola.
- * @author Miguel Piñar
+ * @author Miguel Piñar, Alejandro Villannueva
  */
 #ifndef cola_h
 #define cola_h
