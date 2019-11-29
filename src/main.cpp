@@ -71,8 +71,6 @@ int main(){
 		tmp2.pop();
 	}
 	cout << "}" << endl;
-
 	
-
 	return 0;
 }
