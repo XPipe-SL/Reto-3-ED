@@ -13,14 +13,11 @@ documentacion:
 	
 # ************ Compilación de módulos ************
 
-$(BIN)/main: $(OBJ)/main.o $(OBJ)/cola.o
-	$(CXX) -o $(BIN)/main $(OBJ)/main.o $(OBJ)/cola.o
+$(BIN)/main: $(OBJ)/main.o
+	$(CXX) -o $(BIN)/main $(OBJ)/main.o
 
-$(OBJ)/main.o: $(SRC)/main.cpp $(INC)/cola.h
-	$(CXX) $(CPPFLAGS)  $(SRC)/main.cpp -o  $(OBJ)/main.o
-
-$(OBJ)/cola.o: $(INC)/cola.cpp $(INC)/cola.h 
-	$(CXX) $(CPPFLAGS)  $(INC)/cola.cpp -o  $(OBJ)/cola.o 	
+$(OBJ)/main.o: $(SRC)/main.cpp $(INC)/cola.h $(INC)/cola.cpp
+	$(CXX) $(CPPFLAGS)  $(SRC)/main.cpp -o  $(OBJ)/main.o	
 	
 
 # ************ Limpieza ************
