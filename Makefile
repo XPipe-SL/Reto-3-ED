@@ -8,7 +8,7 @@ all:$(BIN)/main
 
 # ************ Generación de documentación ******************
 documentacion:
-	doxygen config_doc
+	doxygen doc/doxys/Doxyfile
 
 	
 # ************ Compilación de módulos ************
@@ -25,4 +25,4 @@ clean :
 	-rm $(OBJ)/*
 
 mrproper : clean
-	-rm -rf ./*~ $(BIN)/* doc/* $(INC)/*~ $(SRC)/*~ 
+	-rm -rf ./*~ $(BIN)/* doc/html/* $(INC)/*~ $(SRC)/*~ 

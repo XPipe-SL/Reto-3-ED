@@ -61,5 +61,7 @@ void cola<T>::swap(cola<T> & c){
 
 template <class T>
 cola<T> & cola<T>::operator=(const cola<T> & orig){
-	datos = orig.datos;
+	if (this != &orig)
+		datos = orig.datos;
+	return *this;
 }

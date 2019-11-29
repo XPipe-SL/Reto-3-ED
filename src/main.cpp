@@ -71,6 +71,17 @@ int main(){
 		tmp2.pop();
 	}
 	cout << "}" << endl;
+
+	cout << "Igualamos la cola original con la nueva cola." << endl;
+	micola = otracola;
+	
+	cola<int> tmp3(micola);
+	cout << "Cola original (después de la asignación): {";
+	while (!tmp3.empty()) {
+		cout << tmp3.front() << ", ";
+		tmp3.pop();
+	}
+	cout << "}" << endl; 
 	
 	return 0;
 }
